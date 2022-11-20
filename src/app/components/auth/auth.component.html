@@ -1,0 +1,74 @@
+<div class="register">
+  <div class="register__wrapper">
+    <div class="register__wrapper__header">
+      <img
+        (click)="ModalService.close()"
+        class="cross"
+        src="assets/images/Cross.png"
+        alt=""
+      />
+      <h3>Sign in</h3>
+      <p>
+        Registration takes less than a minute but gives you full control over
+        your studying.
+      </p>
+    </div>
+    <form
+      class="register__wrapper__input"
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+    >
+      <span>Email</span>
+      <input
+        type="text"
+        formControlName="username"
+        placeholder="Your working email"
+      />
+      <p *ngIf="userName.errors?.minlength" class="field-error">
+        Email должен содержать больше 6 символов
+      </p>
+
+      <span>Password</span>
+      <img
+        [ngClass]="{ eye: !password.errors?.minlength }"
+        (click)="ModalService.viewPassword()"
+        [src]="
+          ModalService.changeType
+            ? '/assets/images/Eye.png'
+            : '/assets/images/eye-close.png'
+        "
+        alt="Скрыть/Показать"
+      />
+      <input
+        [type]="ModalService.changeType ? 'password' : 'text'"
+        formControlName="password"
+        value="123"
+      />
+      <p *ngIf="password.errors?.minlength" class="field-error">
+        Пароль должен содержать больше 3 символов
+      </p>
+
+      <div class="register__wrapper__checkbox">
+        <input type="checkbox" name="" id="" checked />
+        <p>Keep me signed in</p>
+        <span>Forgot password?</span>
+      </div>
+      <button type="submit" [disabled]="form.invalid">Sign in</button>
+    </form>
+    <div class="register__wrapper__singIn">
+      <p>
+        Don't have an account?
+        <span (click)="ModalService.register()">Sign up</span>
+      </p>
+    </div>
+    <div class="social">
+      <p>Or sign in with</p>
+      <ul class="social__img">
+        <img src="/assets/images/Facebook.png" alt="Facebook" />
+        <img src="/assets/images/Google.png" alt="Google" />
+        <img src="/assets/images/Twitter1.png" alt="Twitter1" />
+        <img src="/assets/images/Linked-In.png" alt="Linked" />
+      </ul>
+    </div>
+  </div>
+</div>

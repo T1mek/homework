@@ -1,0 +1,70 @@
+<div class="contact__info">
+  <div class="info__all">
+    <h6>Contact info</h6>
+    <h1>Get in touch</h1>
+    <div class="info__email">
+      <img src="/assets/images/email.png" alt="Email" />
+      <p>Talk to us:</p>
+    </div>
+    <span>hello@createx.com</span>
+    <div class="info__number">
+      <img src="/assets/images/number.png" alt="Number" />
+      <p>Call us:</p>
+    </div>
+    <span>(405) 555-0128</span>
+    <div class="info__address">
+      <img src="/assets/images/address.png" alt="Address" />
+      <p>Address:</p>
+    </div>
+    <span>2464 Royal Ln. Mesa, New Jersey 45463, USA</span>
+    <div class="follow">
+      <p>Follow us:</p>
+      <ul>
+        <li *ngFor="let social of social">
+          <img [src]="social.img" [alt]="social.title" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
+      <ya-placemark [geometry]="[55.751952, 37.600739]"></ya-placemark>
+    </ya-map>
+  </div>
+</div>
+<div class="contact__form">
+  <img src="/assets/images/illustration.png" alt="illustration" />
+  <div class="form__data">
+    <h6>Any questions?</h6>
+    <h1>Drop us a line</h1>
+    <form action="">
+      <div class="input__data">
+        <div>
+          <p>First Name*</p>
+          <input type="text" placeholder="Your first name" />
+        </div>
+        <div>
+          <p>Last Name*</p>
+          <input type="text" placeholder="Your last name" />
+        </div>
+        <div>
+          <p>Email*</p>
+          <input type="text" placeholder="Your working email" />
+        </div>
+        <div>
+          <p>Phone</p>
+          <input type="text" placeholder="Your phone number" />
+        </div>
+      </div>
+      <div class="input__message">
+        <p>Message*</p>
+        <input type="text" placeholder="Your message" />
+      </div>
+      <div class="input__footer">
+        <input type="checkbox" checked name="" id="" />
+        <p>I agree to receive communications from Createx Online School</p>
+        <button>Send message</button>
+      </div>
+    </form>
+  </div>
+</div>

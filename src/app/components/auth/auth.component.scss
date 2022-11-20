@@ -1,0 +1,140 @@
+@import "../../styles/variables.scss";
+
+.register {
+  background-color: $white;
+  max-height: 100%;
+  width: 486px;
+  border: 1px solid $gray300;
+  box-shadow: 60px 80px -20px rgba(30, 33, 44, 0.16),
+    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
+    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+
+  &__wrapper {
+    margin: 48px;
+    &__header {
+      text-align: center;
+      position: relative;
+      .cross {
+        position: absolute;
+        top: -28px;
+        right: -10px;
+        cursor: pointer;
+      }
+
+      h3 {
+        margin-top: 48px;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 24px;
+        padding-bottom: 4px;
+        color: $gray700;
+      }
+    }
+
+    &__input {
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        top: 175px;
+        cursor: pointer;
+        height: 16px;
+        width: 16px;
+      }
+      input {
+        width: 388px;
+        height: 44px;
+        padding-left: 16px;
+        &::placeholder {
+          color: $gray600;
+        }
+      }
+
+      span {
+        display: inline-flex;
+        margin-top: 30px;
+        padding-bottom: 8px;
+        color: $gray800;
+      }
+    }
+    &__checkbox {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      i {
+        font-size: 12px;
+      }
+      input {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        flex: 1;
+      }
+      span {
+        color: $primary;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+      margin-top: 20px;
+      gap: 5px;
+    }
+    button {
+      margin-top: 24px;
+      background: $btn-gradient;
+      width: 392px;
+      height: 44px;
+      border-radius: 4px;
+      border: none;
+      color: $white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    &__singIn {
+      font-size: 14px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $gray300;
+      p {
+        margin-top: 24px;
+        color: $gray800;
+      }
+      span {
+        color: $primary;
+        cursor: pointer;
+      }
+    }
+    .social {
+      p {
+        text-align: center;
+        margin-top: 24px;
+        color: $gray400;
+        font-size: 14px;
+      }
+      &__img {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 16px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.field-error {
+  color: $primary;
+  font-size: 12px;
+  margin-top: 10px;
+}

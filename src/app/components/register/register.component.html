@@ -1,0 +1,101 @@
+<div class="register">
+  <div class="register__wrapper">
+    <div class="register__wrapper__header">
+      <img
+        (click)="ModalService.close()"
+        class="cross"
+        src="assets/images/Cross.png"
+        alt=""
+      />
+      <h3>Sign up</h3>
+      <p>
+        Registration takes less than a minute but gives you full control over
+        your studying.
+      </p>
+    </div>
+    <form
+      class="register__wrapper__input"
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+    >
+      <span>Full Name</span>
+      <input
+        formControlName="username"
+        type="text"
+        placeholder="Your full name"
+      />
+      <p *ngIf="userName.errors?.minlength" class="field-error">
+        Логин должен содержать больше 6 символов
+      </p>
+      <span>Email</span>
+      <input
+        formControlName="email"
+        type="text"
+        placeholder="Your working email"
+      />
+      <p *ngIf="email.errors?.minlength" class="field-error">
+        Email должен содержать больше 3 символов
+      </p>
+      <span>Password</span>
+      <img
+        [ngClass]="{ eye1: userName.errors?.minlength }"
+        (click)="ModalService.viewPassword()"
+        [src]="
+          ModalService.changeType
+            ? '/assets/images/Eye.png'
+            : '/assets/images/eye-close.png'
+        "
+        alt="Скрыть/Показать"
+      />
+      <input
+        formControlName="password"
+        [type]="ModalService.changeType ? 'password' : 'text'"
+        value="12345678"
+      />
+      <p *ngIf="password.errors?.minlength" class="field-error">
+        Пароль должен содержать больше 3 символов
+      </p>
+      <span>Confirm Password</span>
+      <img
+        class="eye"
+        [ngClass]="{ eye: !password.errors?.minlength }"
+        (click)="ModalService.viewPassword()"
+        [src]="
+          ModalService.changeType
+            ? '/assets/images/Eye.png'
+            : '/assets/images/eye-close.png'
+        "
+        alt="Скрыть/Показать"
+      />
+      <input
+        formControlName="password"
+        [type]="ModalService.changeType ? 'password' : 'text'"
+        value="12345678"
+      />
+      <p *ngIf="password.errors?.minlength" class="field-error">
+        Пароль должен содержать больше 3 символов
+      </p>
+
+      <div class="register__wrapper__checkbox">
+        <input type="checkbox" name="" id="" checked />
+        <p>Remember me</p>
+      </div>
+      <button>Sign up</button>
+    </form>
+    <div class="register__wrapper__singIn">
+      <p>
+        Already have an account?
+        <span (click)="ModalService.login()">Sign in</span>
+      </p>
+    </div>
+    <div class="social">
+      <p>Or sign in with</p>
+      <ul class="social__img">
+        <img src="/assets/images/Facebook.png" alt="Facebook" />
+        <img src="/assets/images/Google.png" alt="Google" />
+        <img src="/assets/images/Twitter1.png" alt="Twitter1" />
+        <img src="/assets/images/Linked-In.png" alt="Linked" />
+      </ul>
+    </div>
+  </div>
+</div>

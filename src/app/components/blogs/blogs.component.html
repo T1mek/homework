@@ -1,0 +1,38 @@
+<div class="blogs">
+  <div *ngFor="let blog of blog" class="blogs__block">
+    <div class="opacity" appColorFull opacity="1">
+      <img [src]="blog.img" alt="" />
+      <div class="blogs__block__badge">
+        <div class="blogs__block__badge__title">
+          <mat-icon class="description" fontSet="material-icons-outlined"
+            >description
+          </mat-icon>
+          <span>{{ blog.inner }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="blogs__block__content">
+      <div class="blogs__block__content__meta">
+        <p>{{ blog.meta.design }}</p>
+        |
+        <div class="calendar">
+          <i class="far fa-calendar"></i>
+          <span>{{ blog.meta.data }}</span>
+        </div>
+
+        <div class="clock">
+          |
+          <i *ngIf="blog.meta.duration" class="far fa-clock"> </i>
+          <span>{{ blog.meta.duration }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="blogs__block__text">
+      <b>{{ blog.title }}</b>
+      <p>
+        {{ blog.text }}
+      </p>
+      <span>{{ blog.click }} <i class="fas fa-long-arrow-alt-right"></i> </span>
+    </div>
+  </div>
+</div>

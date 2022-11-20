@@ -1,0 +1,106 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  height: 338px;
+  width: 1920px;
+  background-color: $gray900;
+  margin-top: 180px;
+
+  &__wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 81px;
+    gap: 80px;
+  }
+
+  &__logo {
+    width: 279px;
+    height: 90px;
+
+    p {
+      color: $white;
+      opacity: 0.6;
+      padding-top: 25px;
+    }
+
+    ul {
+      padding-top: 24px;
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__sitemap {
+    h6 {
+      color: $white;
+      font-size: 16px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      list-style-type: none;
+      gap: 8px;
+
+      li {
+        color: $white;
+        opacity: 0.6;
+        cursor: pointer;
+      }
+
+      span {
+        color: $white;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__input {
+    h6 {
+      color: $white;
+      font-size: 16px;
+    }
+
+    input {
+      margin-top: 24px;
+      width: 286px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      padding: 9px 12px;
+      position: relative;
+    }
+    img {
+      position: absolute;
+      right: 350px;
+      top: 1715px;
+    }
+    p {
+      width: 286px;
+      height: 30px;
+      color: $white;
+      margin-top: 12px;
+      font-size: 10px;
+    }
+  }
+  &__down {
+    background-color: $gray800;
+    display: flex;
+    height: 58px;
+    width: 1920px;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: $white;
+      padding-left: 345px;
+    }
+    span {
+      padding-right: 345px;
+      opacity: 0.6;
+    }
+  }
+}

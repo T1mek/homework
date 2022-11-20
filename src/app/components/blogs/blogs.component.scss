@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+.blogs {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  &__block {
+    width: 390px;
+    margin-top: 60px;
+    position: relative;
+    &__badge {
+      width: 85px;
+      height: 23px;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: $white;
+      border-radius: 4px;
+      &__title {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 3px;
+        span {
+          color: $gray800;
+          font-weight: 400;
+          font-size: 14px;
+        }
+        .description {
+          font-size: 15px;
+        }
+      }
+    }
+    &__content {
+      margin-top: 16px;
+      &__meta {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $gray700;
+        font-size: 14px;
+        font-weight: 400;
+        .calendar,
+        .clock {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          text-align: center;
+        }
+      }
+    }
+    &__text {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      b {
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray900;
+      }
+      p {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $gray800;
+      }
+      span {
+        margin-top: 16px;
+        font-size: 16px;
+        color: $gray900;
+        font-weight: 700;
+        width: 76px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        i {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.opacity{
+  opacity: 0.3;
+  transition: ease-in 4ms;
+}
+

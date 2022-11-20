@@ -1,0 +1,18 @@
+<div class="header">
+  <img src="/assets/images/logo.png" alt="Логотип" />
+  <ul class="header__nav">
+    <a>About Us</a>
+    <a>Courses</a>
+    <a>Events</a>
+    <a routerLink="/blog" routerLinkActive="active">Blog</a>
+    <a routerLink="/contacts" routerLinkActive="active">Contacts</a>
+  </ul>
+
+  <div class="header__button">
+    <button>Get consultation</button>
+    <div class="header__auth">
+      <img src="/assets/images/auth.png" alt="Войти/Зарегистрироваться" />
+      <p (click)="ModalService.open()">Log in / Register</p>
+    </div>
+  </div>
+</div>

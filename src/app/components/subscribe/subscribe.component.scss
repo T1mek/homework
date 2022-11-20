@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+.subscribe {
+  margin-top: 123px;
+  height: 454px;
+  width: 1920px;
+  background-color: $gray200;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 345px;
+
+    &__title {
+      width: 600px;
+
+      h2 {
+        font-size: 32px;
+        margin-top: 100px;
+      }
+      &__form {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        margin-top: 48px;
+        input {
+          height: 52px;
+          width: 422px;
+          border-radius: 4px;
+          border: 1px solid $gray400;
+
+          &::placeholder{
+            padding: 13px 16px;
+          }
+        }
+        button {
+          height: 52px;
+          width: 154px;
+          background: $btn-gradient;
+          padding: 0 40px;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+      &__checkbox{
+        margin-top: 29px;
+        display: flex;
+        gap:12px ;
+      }
+    }
+  }
+}

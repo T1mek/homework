@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+.out-blog{
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  &__wrapper{
+    width: 1232px;
+    display: flex;
+    justify-content: space-between;
+    &__title{
+      color:$gray900;
+      h6{
+        font-weight: 700;
+        font-size: 16px;
+      }
+      h1{
+        font-weight: 900;
+        font-size: 46px;
+        margin-top: 8px;
+      }
+    }
+    &__slider{
+      display: flex;
+      gap: 27px;
+      height: 24px;
+      margin-top: 44px;
+      i{
+        cursor: pointer;
+      }
+    }
+  }
+
+}

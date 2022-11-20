@@ -1,0 +1,132 @@
+@import "../../styles/variables.scss";
+.sidebar {
+  width: 342px;
+  &__input {
+    position: relative;
+    i {
+      position: absolute;
+      right: 10px;
+      top: 17px;
+      color: $gray600;
+    }
+    input {
+      border-radius: 4px;
+      border: 1px solid $gray400;
+      width: 312px;
+      height: 24px;
+      padding: 12px 16px;
+      color: $gray600;
+      &::placeholder {
+        color: $gray400;
+      }
+    }
+  }
+  &__author {
+    margin-top: 60px;
+    h6 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray900;
+    }
+    &__profile {
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $gray800;
+      }
+      span {
+        margin-top: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $gray700;
+      }
+      mat-list {
+        display: flex;
+        margin-top: 22px;
+        gap: 12px;
+        i {
+          color: $gray700;
+          cursor: pointer;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  &__articles {
+    margin-top: 60px;
+    h6 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray900;
+    }
+    &__post {
+      display: flex;
+      text-align: center;
+      margin-top: 24px;
+      &__info {
+        margin-left: 20px;
+        p {
+          margin-top: 4px;
+          font-size: 16px;
+          font-weight: 700;
+          color: $gray900;
+          text-align: start;
+          cursor: pointer;
+          &:hover {
+            color: $primary;
+          }
+        }
+        .calendar {
+          height: 21px;
+          display: flex;
+          align-items: center;
+
+          font-weight: 400;
+          font-size: 14px;
+          color: $gray700;
+          span {
+            margin-left: 9px;
+          }
+        }
+      }
+    }
+  }
+  &__tags {
+    margin-top: 60px;
+    h6 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $gray900;
+    }
+    &__tag {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+      list-style-type: none;
+      margin-top: 31px;
+
+      li {
+        display: flex;
+        align-items: center;
+        border: 1px solid $gray400;
+        border-radius: 4px;
+        padding: 6px 16px;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}

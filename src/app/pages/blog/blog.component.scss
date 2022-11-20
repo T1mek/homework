@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+.blog{
+  width: 1920px;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+  }
+}
+.view-more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  &__footer{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+      font-size: 28px;
+      font-weight: 700;
+      color: $gray900;
+    }
+    button{
+      width: 158px;
+      height: 52px;
+      color: $white;
+      background: $btn-gradient;
+      border-radius: 4px  ;
+      border: none  ;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+}
