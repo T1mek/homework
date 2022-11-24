@@ -1,24 +1,30 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ContactsComponent } from './pages/contacts/contacts.component';
-import { BlogComponent } from './pages/blog/blog.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { ContactsComponent } from "./pages/contacts/contacts.component";
+import { BlogComponent } from "./pages/blog/blog.component";
+import { ChartComponent } from "./pages/chart/chart.component";
 
 const routes: Routes = [
   {
-    path: 'contacts',
+    path: "contacts",
     component: ContactsComponent,
   },
   {
-    path: 'blog',
+    path: "blog",
     component: BlogComponent,
   },
   {
-    path: '',
-    redirectTo: 'contacts',
-    pathMatch: 'full',
+    path: "chart",
+    component: ChartComponent,
   },
   {
-    path: '**',
+    path: "",
+    redirectTo: "contacts",
+    pathMatch: "full",
+  },
+
+  {
+    path: "**",
     component: ContactsComponent,
   },
 ];

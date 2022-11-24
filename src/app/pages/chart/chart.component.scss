@@ -1,0 +1,23 @@
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 4000px;
+  margin-left: 1800px;
+
+  margin-top: 200px;
+
+
+  .delivered,
+  .chart_return,
+  .chart_new,
+  .chart_orders,
+  .chart_all {
+    margin-left: 150px;
+    width: 800px;
+    height: 400px;
+
+  }
+}
+
+

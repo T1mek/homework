@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ModalService } from '../../services/modal.service';
+import { Component, Input, OnInit } from "@angular/core";
+import { ModalService } from "../../services/modal.service";
 
 import {
   FormControl,
@@ -7,23 +7,20 @@ import {
   NgForm,
   Validators,
   FormGroup,
-} from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
-import { Subscription } from 'rxjs';
-import { AuthServiceService } from '../../services/auth-service.service';
+} from "@angular/forms";
 
 @Component({
-  selector: 'auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss'],
+  selector: "auth",
+  templateUrl: "./auth.component.html",
+  styleUrls: ["./auth.component.scss"],
 })
 export class AuthComponent implements OnInit {
   form = new FormGroup<any>({
-    username: new FormControl<string>('', [
+    username: new FormControl<string>("", [
       Validators.required,
       Validators.minLength(6),
     ]),
-    password: new FormControl<string>('12', [
+    password: new FormControl<string>("12", [
       Validators.required,
       Validators.minLength(3),
     ]),
