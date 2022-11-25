@@ -23,175 +23,139 @@ export class ChartComponent implements OnInit {
   k: any = Object.entries(this.data);
   o: any = new Map(this.w);
 
-  // z: any = this.k.filter((a, b) => {
-  //   a.src_office_id == b.src_office_id;
-  // });
-  // map: any = this.data.reduce((a) => {
-  //   //   if (a.src_office_id === this.w[0].src_office_id) {
-  //   //     // @ts-ignore
-  //   //     let b = [];
-  //   //     b.push(a);
-  //   //     console.log(b);
-  //   //   }
-  //   // });
-  first: any = this.data.reduce((acc, name) => {
+  first: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[0].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  second: any = this.data.reduce((acc, name) => {
+  second: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[25].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  there: any = this.data.reduce((acc, name) => {
+  there: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[36].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  four: any = this.data.reduce((acc, name) => {
+  four: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[51].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  five: any = this.data.reduce((acc, name) => {
+  five: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[62].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  six: any = this.data.reduce((acc, name) => {
+  six: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[63].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  seven: any = this.data.reduce((acc, name) => {
+  seven: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[73].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  eight: any = this.data.reduce((acc, name) => {
+  eight: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[75].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  nine: any = this.data.reduce((acc, name) => {
+  nine: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[77].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  ten: any = this.data.reduce((acc, name) => {
+  ten: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[79].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  eleven: any = this.data.reduce((acc, name) => {
+  eleven: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[89].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  twelve: any = this.data.reduce((acc, name) => {
+  twelve: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[90].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  thirteen: any = this.data.reduce((acc, name) => {
+  thirteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[91].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  fourteen: any = this.data.reduce((acc, name) => {
+  fourteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[91].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  fifteen: any = this.data.reduce((acc, name) => {
+  fifteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[108].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  sixteen: any = this.data.reduce((acc, name) => {
+  sixteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[114].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  seventeen: any = this.data.reduce((acc, name) => {
+  seventeen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[125].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  eighteen: any = this.data.reduce((acc, name) => {
+  eighteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[132].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  nineteen: any = this.data.reduce((acc, name) => {
+  nineteen: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[146].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  twenty: any = this.data.reduce((acc, name) => {
+  twenty: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[147].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  twenty_one: any = this.data.reduce((acc, name) => {
+  twenty_one: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[167].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  all: any = this.data.reduce((acc, name) => {
+  all: IChart[] = this.data.reduce((acc: IChart[], name) => {
     if (name.src_office_id === this.w[0].src_office_id) {
-      // @ts-ignore
       acc.push(name);
     }
     return acc;
   }, []);
-  // q: any = this.data.filter((item, index) => {
-  //   return index === this.data.indexOf(item);
-  // });
-  // m: any = new Map(Object.entries(this.data));
+
   l: any = this.data.reduce((acc, name) => {
     let k = Object.values(name);
     let o = new Map();
@@ -206,27 +170,27 @@ export class ChartComponent implements OnInit {
   }, []);
   u: any = new Map(this.l);
 
-  q1: any = this.u.get(0);
-  q2: any = this.u.get(24);
-  q3: any = this.u.get(36);
-  q4: any = this.u.get(48);
-  q5: any = this.u.get(69);
-  q6: any = this.u.get(87);
-  q7: any = this.u.get(90);
-  q8: any = this.u.get(96);
-  q9: any = this.u.get(102);
-  q10: any = this.u.get(120);
-  q11: any = this.u.get(144);
-  q12: any = this.u.get(150);
-  q13: any = this.u.get(153);
-  q14: any = this.u.get(171);
-  q15: any = this.u.get(174);
-  q16: any = this.u.get(192);
-  q17: any = this.u.get(195);
-  q18: any = this.u.get(204);
-  q19: any = this.u.get(378);
-  q20: any = this.u.get(387);
-  q21: any = this.u.get(426);
+  q1: IChart = this.u.get(0);
+  q2: IChart = this.u.get(24);
+  q3: IChart = this.u.get(36);
+  q4: IChart = this.u.get(48);
+  q5: IChart = this.u.get(69);
+  q6: IChart = this.u.get(87);
+  q7: IChart = this.u.get(90);
+  q8: IChart = this.u.get(96);
+  q9: IChart = this.u.get(102);
+  q10: IChart = this.u.get(120);
+  q11: IChart = this.u.get(144);
+  q12: IChart = this.u.get(150);
+  q13: IChart = this.u.get(153);
+  q14: IChart = this.u.get(171);
+  q15: IChart = this.u.get(174);
+  q16: IChart = this.u.get(192);
+  q17: IChart = this.u.get(195);
+  q18: IChart = this.u.get(204);
+  q19: IChart = this.u.get(378);
+  q20: IChart = this.u.get(387);
+  q21: IChart = this.u.get(426);
 
   constructor(private chartService: ChartService) {
     Chart.register(...registerables);
