@@ -198,32 +198,33 @@ export class ChartComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.all);
+    console.log(this.u.keys(1));
     this.chart_delivered = new Chart("first", {
       type: "line",
       data: {
-        labels: this.first.map((time: any) => time.dt_date),
+        labels: this.first.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.first.map((m: any) => m.qty_delivered),
+            data: this.first.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.first.map((m: any) => m.qty_new),
+            data: this.first.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.first.map((m: any) => m.qty_return),
+            data: this.first.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.first.map((m: any) => m.qty_orders),
+            data: this.first.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -244,30 +245,30 @@ export class ChartComponent implements OnInit {
     this.chart_orders = new Chart("second", {
       type: "line",
       data: {
-        labels: this.second.map((time: any) => time.dt_date),
+        labels: this.second.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.second.map((m: any) => m.qty_delivered),
+            data: this.second.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
 
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.second.map((m: any) => m.qty_new),
+            data: this.second.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.second.map((m: any) => m.qty_return),
+            data: this.second.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.second.map((m: any) => m.qty_orders),
+            data: this.second.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -286,29 +287,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("there", {
       type: "line",
       data: {
-        labels: this.there.map((time: any) => time.dt_date),
+        labels: this.there.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.there.map((m: any) => m.qty_delivered),
+            data: this.there.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.there.map((m: any) => m.qty_new),
+            data: this.there.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.there.map((m: any) => m.qty_return),
+            data: this.there.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.there.map((m: any) => m.qty_orders),
+            data: this.there.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -328,29 +329,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("four", {
       type: "line",
       data: {
-        labels: this.four.map((time: any) => time.dt_date),
+        labels: this.four.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.four.map((m: any) => m.qty_delivered),
+            data: this.four.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.four.map((m: any) => m.qty_new),
+            data: this.four.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.four.map((m: any) => m.qty_return),
+            data: this.four.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.four.map((m: any) => m.qty_orders),
+            data: this.four.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -370,29 +371,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("five", {
       type: "line",
       data: {
-        labels: this.five.map((time: any) => time.dt_date),
+        labels: this.five.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.five.map((m: any) => m.qty_delivered),
+            data: this.five.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.five.map((m: any) => m.qty_new),
+            data: this.five.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.five.map((m: any) => m.qty_return),
+            data: this.five.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.five.map((m: any) => m.qty_orders),
+            data: this.five.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -412,29 +413,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("six", {
       type: "line",
       data: {
-        labels: this.six.map((time: any) => time.dt_date),
+        labels: this.six.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.six.map((m: any) => m.qty_delivered),
+            data: this.six.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.six.map((m: any) => m.qty_new),
+            data: this.six.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.six.map((m: any) => m.qty_return),
+            data: this.six.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.six.map((m: any) => m.qty_orders),
+            data: this.six.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -454,29 +455,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("seven", {
       type: "line",
       data: {
-        labels: this.seven.map((time: any) => time.dt_date),
+        labels: this.seven.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.seven.map((m: any) => m.qty_delivered),
+            data: this.seven.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.seven.map((m: any) => m.qty_new),
+            data: this.seven.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.seven.map((m: any) => m.qty_return),
+            data: this.seven.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.seven.map((m: any) => m.qty_orders),
+            data: this.seven.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -496,29 +497,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("eight", {
       type: "line",
       data: {
-        labels: this.eight.map((time: any) => time.dt_date),
+        labels: this.eight.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.eight.map((m: any) => m.qty_delivered),
+            data: this.eight.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.eight.map((m: any) => m.qty_new),
+            data: this.eight.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.eight.map((m: any) => m.qty_return),
+            data: this.eight.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.eight.map((m: any) => m.qty_orders),
+            data: this.eight.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -538,29 +539,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("nine", {
       type: "line",
       data: {
-        labels: this.nine.map((time: any) => time.dt_date),
+        labels: this.nine.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.nine.map((m: any) => m.qty_delivered),
+            data: this.nine.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.nine.map((m: any) => m.qty_new),
+            data: this.nine.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.nine.map((m: any) => m.qty_return),
+            data: this.nine.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.nine.map((m: any) => m.qty_orders),
+            data: this.nine.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -580,29 +581,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("ten", {
       type: "line",
       data: {
-        labels: this.ten.map((time: any) => time.dt_date),
+        labels: this.ten.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.ten.map((m: any) => m.qty_delivered),
+            data: this.ten.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.ten.map((m: any) => m.qty_new),
+            data: this.ten.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.ten.map((m: any) => m.qty_return),
+            data: this.ten.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.ten.map((m: any) => m.qty_orders),
+            data: this.ten.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -622,29 +623,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("eleven", {
       type: "line",
       data: {
-        labels: this.eleven.map((time: any) => time.dt_date),
+        labels: this.eleven.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.eleven.map((m: any) => m.qty_delivered),
+            data: this.eleven.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.eleven.map((m: any) => m.qty_new),
+            data: this.eleven.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.eleven.map((m: any) => m.qty_return),
+            data: this.eleven.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.eleven.map((m: any) => m.qty_orders),
+            data: this.eleven.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -664,29 +665,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("twelve", {
       type: "line",
       data: {
-        labels: this.twelve.map((time: any) => time.dt_date),
+        labels: this.twelve.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.twelve.map((m: any) => m.qty_delivered),
+            data: this.twelve.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.twelve.map((m: any) => m.qty_new),
+            data: this.twelve.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.twelve.map((m: any) => m.qty_return),
+            data: this.twelve.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.twelve.map((m: any) => m.qty_orders),
+            data: this.twelve.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -706,29 +707,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("thirteen", {
       type: "line",
       data: {
-        labels: this.thirteen.map((time: any) => time.dt_date),
+        labels: this.thirteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.thirteen.map((m: any) => m.qty_delivered),
+            data: this.thirteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.thirteen.map((m: any) => m.qty_new),
+            data: this.thirteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.thirteen.map((m: any) => m.qty_return),
+            data: this.thirteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.thirteen.map((m: any) => m.qty_orders),
+            data: this.thirteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -748,29 +749,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("fourteen", {
       type: "line",
       data: {
-        labels: this.fourteen.map((time: any) => time.dt_date),
+        labels: this.fourteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.fourteen.map((m: any) => m.qty_delivered),
+            data: this.fourteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.fourteen.map((m: any) => m.qty_new),
+            data: this.fourteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.fourteen.map((m: any) => m.qty_return),
+            data: this.fourteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.fourteen.map((m: any) => m.qty_orders),
+            data: this.fourteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -790,29 +791,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("fifteen", {
       type: "line",
       data: {
-        labels: this.fifteen.map((time: any) => time.dt_date),
+        labels: this.fifteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.fifteen.map((m: any) => m.qty_delivered),
+            data: this.fifteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.fifteen.map((m: any) => m.qty_new),
+            data: this.fifteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.fifteen.map((m: any) => m.qty_return),
+            data: this.fifteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.fifteen.map((m: any) => m.qty_orders),
+            data: this.fifteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -832,29 +833,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("sixteen", {
       type: "line",
       data: {
-        labels: this.sixteen.map((time: any) => time.dt_date),
+        labels: this.sixteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.sixteen.map((m: any) => m.qty_delivered),
+            data: this.sixteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.sixteen.map((m: any) => m.qty_new),
+            data: this.sixteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.sixteen.map((m: any) => m.qty_return),
+            data: this.sixteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.sixteen.map((m: any) => m.qty_orders),
+            data: this.sixteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -874,29 +875,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("seventeen", {
       type: "line",
       data: {
-        labels: this.seventeen.map((time: any) => time.dt_date),
+        labels: this.seventeen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.seventeen.map((m: any) => m.qty_delivered),
+            data: this.seventeen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.seventeen.map((m: any) => m.qty_new),
+            data: this.seventeen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.seventeen.map((m: any) => m.qty_return),
+            data: this.seventeen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.seventeen.map((m: any) => m.qty_orders),
+            data: this.seventeen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -916,29 +917,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("eighteen", {
       type: "line",
       data: {
-        labels: this.eighteen.map((time: any) => time.dt_date),
+        labels: this.eighteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.eighteen.map((m: any) => m.qty_delivered),
+            data: this.eighteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.eighteen.map((m: any) => m.qty_new),
+            data: this.eighteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.eighteen.map((m: any) => m.qty_return),
+            data: this.eighteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.eighteen.map((m: any) => m.qty_orders),
+            data: this.eighteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -958,29 +959,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("nineteen", {
       type: "line",
       data: {
-        labels: this.nineteen.map((time: any) => time.dt_date),
+        labels: this.nineteen.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.nineteen.map((m: any) => m.qty_delivered),
+            data: this.nineteen.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.nineteen.map((m: any) => m.qty_new),
+            data: this.nineteen.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.nineteen.map((m: any) => m.qty_return),
+            data: this.nineteen.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.nineteen.map((m: any) => m.qty_orders),
+            data: this.nineteen.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -1000,29 +1001,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("twenty", {
       type: "line",
       data: {
-        labels: this.twenty.map((time: any) => time.dt_date),
+        labels: this.twenty.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.twenty.map((m: any) => m.qty_delivered),
+            data: this.twenty.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.twenty.map((m: any) => m.qty_new),
+            data: this.twenty.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.twenty.map((m: any) => m.qty_return),
+            data: this.twenty.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.twenty.map((m: any) => m.qty_orders),
+            data: this.twenty.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
@@ -1088,29 +1089,29 @@ export class ChartComponent implements OnInit {
     this.chart_delivered = new Chart("all", {
       type: "line",
       data: {
-        labels: this.all.map((time: any) => time.dt_date),
+        labels: this.all.map((time: IChart) => time.dt_date),
         datasets: [
           {
             label: "qty_delivered",
-            data: this.all.map((m: any) => m.qty_delivered),
+            data: this.all.map((m: IChart) => m.qty_delivered),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_new",
-            data: this.all.map((m: any) => m.qty_new),
+            data: this.all.map((m: IChart) => m.qty_new),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_return",
-            data: this.all.map((m: any) => m.qty_return),
+            data: this.all.map((m: IChart) => m.qty_return),
             borderColor: "gray",
             fill: false,
           },
           {
             label: "qty_orders",
-            data: this.all.map((m: any) => m.qty_orders),
+            data: this.all.map((m: IChart) => m.qty_orders),
             borderColor: "gray",
             fill: false,
           },
